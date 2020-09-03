@@ -184,17 +184,12 @@
                 <hr class="mt-4 mb-5">
                         <input type='hidden' name='hidden_id' value='<?php echo $user_data ? $user_data->id : ''; ?>' />
                         <button type="submit" class="btn btn-primary" name="<?php echo $user_data ? 'update' : 'insert';?>" value="<?php echo $user_data ? 'update' : 'insert'; ?>"   id="soc_update">Update</button>&nbsp;
-                        <a href="<?php echo base_url();?>profile/preview" class="btn btn-primary">Preview CV    </button>
+                        <button href="<?php echo base_url();?>profile/preview" class="btn btn-primary">Preview CV    </button>
                     </div>
                 </div>
             </form>
           </div>
-        </div>
-
-   <div class="card">
-      <div class="card-header">Get your unique URL</div>
-      <div class="card-body">http://localhost:8080/first-app/profile/preview/<?php echo $key;?></div>
-   </div>     
+        </div>   
       </div>  
       
     </div> <!-- / .main-content -->
