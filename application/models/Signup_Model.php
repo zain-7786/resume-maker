@@ -18,6 +18,7 @@ class Signup_Model extends CI_Model{
         $query = $this->db->select('*')->from('users')->where('id',$id)->get()->row();
         return $query;
     }
+    
 
     function get_id($key){
 
