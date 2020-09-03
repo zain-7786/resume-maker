@@ -132,7 +132,7 @@
                 <div class="col-3 my-5" >
                     <div class="card my-5" style="border:solid 0px">
                         <div class="card-header text-white" style="background-color:#1B45C9;"><span class="fe fe-user"></span>PROFILE VISITOR<span class="fe fe-arrow-down mr-4"></span></div>
-                        <div class="card-body text-light" style="background-color:#121726;"><h1><?php echo $count->visitors_count;?></h1></div>
+                        <div class="card-body" style="background-color:#121726;color:white"><h1 class="display-2"><?php echo $count->visitors_count;?></h1></div>
                     </div>  
                 </div>
             </div>
