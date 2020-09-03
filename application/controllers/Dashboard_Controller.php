@@ -29,6 +29,7 @@ class Dashboard_Controller extends CI_Controller{
     public function index(){
 
         $user_id = $this->session->userdata['id'];
+        $data['info'] = $this->personal_info_model->get_data($user_id);
         $data['count'] =  $this->signup_model->get_unique_key($user_id);
         $data['user'] = $this->signup_model->get_unique_key($user_id);
         $this->load->view('dashboard', $data);

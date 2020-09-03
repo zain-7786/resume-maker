@@ -2,7 +2,7 @@
 <body>
     <!-- NAVIGATION
     ================================================== -->
-    <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light" id="sidebar">
+    <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light" id="sidebar" style="background-color:#121726;">
         <div class="container-fluid">
 
             <!-- Toggler -->

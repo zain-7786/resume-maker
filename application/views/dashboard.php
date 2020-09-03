@@ -2,7 +2,7 @@
 <body>
     <!-- NAVIGATION
     ================================================== -->
-    <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light" id="sidebar">
+    <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light" id="sidebar" style="background-color:#121726;">
         <div class="container-fluid">
 
             <!-- Toggler -->
@@ -20,10 +20,10 @@
                 <!-- Form -->
                 <form class="mt-4 mb-3 d-md-none">
                     <div class="input-group input-group-rounded input-group-merge">
-                        <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
+                        <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="" aria-label="">
                         <div class="input-group-prepend">
                             <div class="input-group-text">
-                                <span class="fe fe-search"></span>
+                                <span class=""></span>
                             </div>
                         </div>
                     </div>
@@ -78,9 +78,9 @@
     </nav>
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content">
+    <div class="main-content" style = "font-family:helvetica;">
    
-        <nav class="navbar navbar-expand-md navbar-light d-none d-md-flex" id="topbar">
+        <nav class="navbar navbar-expand-md navbar-dark d-none d-md-flex" id="topbar"> 
             <div class="container-fluid">
 
                 <!-- Form -->
@@ -88,10 +88,10 @@
                     <div class="input-group input-group-flush input-group-merge" data-toggle="lists" data-options='{"valueNames": ["name"]}'>
 
                         <!-- Input -->
-                        <input type="search" class="form-control form-control-prepended dropdown-toggle search" data-toggle="dropdown" placeholder="Search" aria-label="Search">
-                        <div class="input-group-prepend">
+                        <input type="search" class="form-control form-control-prepended dropdown-toggle search" data-toggle="dropdown" placeholder="" aria-label="Search">
+                        <div class=" input-group-prepend">
                             <div class="input-group-text">
-                                <i class="fe fe-search"></i>
+                                <i class=""></i>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
 
                         <!-- Toggle -->
                         <a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="<?php echo base_url();?>/assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                            <img src="<?php echo base_url();?>/assets/img/uploads/<?php echo $info->picture; ?>" alt="..." class="avatar-img rounded-circle">
                         </a>
 
                         <!-- Menu -->
@@ -120,19 +120,19 @@
             </div>
            
         </nav>
-        <div class="container my-5" style="background-image: url('<?php echo base_url();?>/assets/img/avatars/projects/bg1.jpg');";>
+        <div class="container mb-5" style="background-image: url('<?php echo base_url();?>/assets/img/avatars/projects/resume3.jpg');";>
             <div class="row">
                 <div class="col-10">
                 <!--<img src="<?php echo base_url();?>/assets/img/avatars/projects/bg1.jpg" alt="..." style="height:94%; width:100%;">-->
                     <div class="card my-5">
-                        <div class="card-header" style="background-color:#FF5733;">Get your Profile URL</div>
-                        <div class="card-body">http://localhost:8080/first-app/profile/preview/<?php echo $user->unique_key; ?></div>
+                        <div class="card-header" style="background-color:#FF5733;"><h2 class='my-1'><b>Get your Profile URL</b></2></div>
+                        <div class="card-body text-white" style="background-color:#121726;">http://localhost:8080/first-app/profile/preview/<?php echo $user->unique_key; ?></div>
                     </div> 
                 </div><hr>
                 <div class="col-3 my-5" >
                     <div class="card my-5" style="border:solid 0px">
-                        <div class="card-header" style="background-color:#FF5733;"><span class="fe fe-user"></span>PROFILE VISITOR<span class="fe fe-arrow-down mr-4"></span></div>
-                        <div class="card-body" style='align-text:center;'><h1><?php echo $count->visitors_count;?></h1></div>
+                        <div class="card-header text-white" style="background-color:#1B45C9;"><span class="fe fe-user"></span>PROFILE VISITOR<span class="fe fe-arrow-down mr-4"></span></div>
+                        <div class="card-body text-light" style="background-color:#121726;"><h1><?php echo $count->visitors_count;?></h1></div>
                     </div>  
                 </div>
             </div>

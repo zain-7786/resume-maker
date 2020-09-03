@@ -14,7 +14,7 @@
 
 <div class="container my-4" id="main">
     <div class="row">
-    <div class="card col-sm-3" style="background-color:lavender;">
+    <div class="card col-sm-3" style="background-color:lavender;font-family:helvetica;">
     <h5 class='mt-2 mx-5'>Profile Picture</h5>
         <!--<div class='my-2 mx-5' style="border:solid 3px; height:150px; width:150px"></div>-->
         <div class="avatar avatar-xxl mx-5">
@@ -25,9 +25,9 @@
         <h5><span class="badge badge-primary fe fe-user">Name :</span> <small><?php echo $personalinfo_data->name;?></small></h5>
         <h5><span class="badge badge-primary fe fe-mail">Email:</span> <small><?php echo $personalinfo_data->email;?></small></h5>
         <h5><span class=""><span class="badge badge-primary fe fe-phone">..Phone</span> <small><?php echo $personalinfo_data->phone;?></small></h5>
-        <h5><span class="badge badge-primary fe fe-align-center">Description:</span> <small><?php echo $personalinfo_data->description;?></small></h5>
         <h5><span class="badge badge-primary">Tagline:</span> <small>"<?php echo $personalinfo_data->tagline;?>"</small></h5>
-        <h5><span class="badge badge-primary">Address:</span> <small><?php echo $personalinfo_data->address;?></small></h5><br>
+        <h5><span class="badge badge-primary">Address:</span> <small><?php echo $personalinfo_data->address;?></small></h5>
+        <h5><span class="badge badge-primary ">Description:</span> <small><?php echo $personalinfo_data->description;?></small></h5><br>
         <hr style="border:1px solid">
    
    
@@ -42,7 +42,7 @@
     </div>
 
    
-    <div class="card col-sm-9" style="background-color:lavenderblush; ">
+    <div class="card col-sm-9 text-white" style="background-color:#121726; ">
         <h3 class='my-4'><b><u><span class="badge badge-danger">EXPERIENCES</span></u></b></h4><hr style="border:1px solid">
         <?php foreach($experience_data as $key => $row3){?>
         <div>
@@ -81,7 +81,7 @@
     </div>
   </div>
   </div><hr>
-  <input type="button" align="right" id="btnExport" value="Export PDF" /><hr>
+  <input type="button" class='btn btn-info mx-5' align="right" id="btnExport" value="Export PDF" /><hr>
 
   <script>
   $("body").on("click", "#btnExport", function () {
