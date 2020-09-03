@@ -6,7 +6,11 @@ class Personal_Info_Controller extends CI_Controller{
     {
         parent::__construct();
         //print_r($this->session->userdata['id']);die();
-        if(!$this->session->userdata())
+        // if(!$this->session->userdata())
+        // {
+        //     redirect('login');
+        // }
+        if(!array_key_exists('id', $this->session->userdata()))
         {
             redirect('login');
         }
